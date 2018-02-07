@@ -10,6 +10,10 @@ import Find from "./pages/Find";
 import Infos from "./pages/Infos";
 
 class App extends Component {
+
+    showSettings (event) {
+        event.preventDefault();
+    }
   render() {
     return (
         <Router>

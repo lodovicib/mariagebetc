@@ -10,7 +10,7 @@ class Follow extends Component {
                 <h1>Suivez-nous</h1>
                 <div className="line"></div>
                 <div className="content-bloc">
-                    <div className="title-blog" style={{'margin-top': '20px'}}>C'est le début de l'aventure</div>
+                    <div className="title-blog" style={{'marginTop': '20px'}}>C'est le début de l'aventure</div>
                     <div className="bloc">
                         <img src={test} />
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus facilisis nunc augue, ac dignissim urna elementum et. Proin facilisis massa vitae vulputate vulputate. Quisque vitae porta augue. Nam et ligula ut nulla malesuada luctus. Sed ac tincidunt nisi, et malesuada diam. Quisque ipsum urna, aliquam a ante non, venenatis tincidunt nisi. Suspendisse potenti. Vestibulum eget ligula aliquam, suscipit risus sagittis, fringilla elit. Vestibulum dignissim sem quis metus fermentum lacinia. Nunc nec justo ut felis luctus dapibus. Mauris sed ultrices augue, ac auctor ligula.
