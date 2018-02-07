@@ -20,7 +20,7 @@ class Form extends React.Component {
             autoClose: false
         });
         this.setState({firstName: null, lastName: null, firstName2: null, lastName2: null,
-            address: null, cp: null, ville:null , mail: null, comment: null
+            address: null, cp: null, city:null , mail: null, comment: null
         });
         document.getElementById("rsvp-form").reset();
     }

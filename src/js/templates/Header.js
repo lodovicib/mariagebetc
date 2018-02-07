@@ -1,14 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu'
+import MdHome from 'react-icons/lib/md/home';
+import MdDirectionsRun from 'react-icons/lib/md/directions-run';
+import MdInfoOutline from 'react-icons/lib/md/info-outline';
+import MdDirectionsCar from 'react-icons/lib/md/directions-car';
+import MdModeEdit from 'react-icons/lib/md/mode-edit';
+import MdFavoriteOutline from 'react-icons/lib/md/favorite-outline';
 import '../../styles/css/style.css';
 import '../../styles/css/react-burger-menu.css';
 
+let isMenuOpen = function(state) {
+    return state.isOpen;
+};
 
+let path = function() {
+    return  window.location.pathname;
+};
 const Header = () => (
 
     <header className="Header">
-        <nav id="navigation" role="navigation">
+        <nav id="navigation">
             <ul className="Header-menu">
                 <li><Link className={window.location.pathname === '/' ? 'active' : '' } to="/">Accueil</Link></li>
                 <li><Link className={window.location.pathname === '/follow' ? 'active' : '' } to="/follow">Suivez-nous</Link></li>
@@ -17,11 +29,27 @@ const Header = () => (
                 <li><Link className={window.location.pathname === '/form' ? 'active' : '' } to="/form">RSVP</Link></li>
             </ul>
         </nav>
-        <Menu>
-            <a id="home" className="menu-item" href="/">Home</a>
-            <a id="about" className="menu-item" href="/about">About</a>
-            <a id="contact" className="menu-item" href="/contact">Contact</a>
-            <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+        <Menu onStateChange={ isMenuOpen }>
+            <Link className={path() === '/' ? 'active' : '' } to="/">
+                <MdHome /> <span>Accueil</span>
+            </Link>
+            <Link className={path() === '/follow' ? 'active' : '' } to="/follow">
+                <MdDirectionsRun /> <span>Suivez-nous</span>
+            </Link>
+            <Link className={path() === '/infos' ? 'active' : '' } to="/infos">
+                <MdInfoOutline /> <span>Informations</span>
+            </Link>
+            <Link className={path() === '/find' ? 'active' : '' } to="/find">
+                <MdDirectionsCar /> <span>Nous trouver</span>
+            </Link>
+            <Link className={path() === '/form' ? 'active' : '' } to="/form">
+                <MdModeEdit /> <span>RSVP</span>
+            </Link>
+            <Link className={path() === '/thankyou' ? 'active' : '' } to="/thankyou">
+                <MdFavoriteOutline /> <span>Remerciements</span>
+            </Link>
+            <hr />
+            <span>Version 0.1</span>
         </Menu>
     </header>
 );

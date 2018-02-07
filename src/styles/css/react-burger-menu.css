@@ -3,8 +3,8 @@
     position: fixed;
     width: 36px;
     height: 30px;
-    left: 36px;
-    top: 36px;
+    left: 10px;
+    top: 10px;
 }
 
 /* Color/shape of burger icon bars */
@@ -26,8 +26,23 @@
 /* General sidebar styles */
 .bm-menu {
     background: #373a47;
-    padding: 2.5em 1.5em 0;
+    padding: 1em 1.5em 0 1.5em;
     font-size: 1.15em;
+    overflow: unset;
+}
+
+.bm-menu a, a:visited {
+    color: #494848;
+    text-decoration: none;
+}
+
+.bm-menu a:Hover {
+    color: #afd7f6;
+    transition: color 0.4s ease 0s;
+}
+
+.bm-menu .active {
+    color: #9fcff4 !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -38,7 +53,21 @@
 /* Wrapper for item list */
 .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em;
+    padding: 0 0.8em 10px 0.8em;
+}
+
+.bm-item-list a {
+    padding: 0.6em 0.8em 0.6em 0.8em;
+}
+
+.bm-menu a {
+    color: #b8b7ad;
+    text-align: left;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Styling of overlay */

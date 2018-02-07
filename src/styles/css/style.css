@@ -29,11 +29,15 @@ body {
     }
 
     .Header {
-        height: 40px !important;
+        height: 50px !important;
     }
 
     .Home {
-        margin-top: 40px !important;
+        margin-top: 50px !important;
+    }
+
+    .App-contain h1 {
+      padding-top: 0 !important;
     }
 }
 
@@ -81,23 +85,21 @@ padding: 20px;
 }
 
 .Header-menu a, a:visited {
-color: #494848;
-line-height: 24px;
-text-decoration: none;
+  color: #494848;
+  line-height: 24px;
+  text-decoration: none;
 }
 
 .Header-menu a:Hover {
-color: #afd7f6;
-transition: color 0.4s ease 0s;
+  color: #afd7f6;
+  transition: color 0.4s ease 0s;
 }
 
 .Header-menu .active {
-color: #9fcff4 !important;
+  color: #9fcff4 !important;
 }
 
-.App-content {
-min-height: 100px;
-}
+.App-content { }
 
 /***************/
 /** Container **/
