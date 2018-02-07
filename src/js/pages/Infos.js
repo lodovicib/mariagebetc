@@ -4,8 +4,9 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import MdAccessTime from 'react-icons/lib/md/access-time';
 import MdLocationOn from 'react-icons/lib/md/location-on';
+import MdLocalBar from 'react-icons/lib/md/local-bar';
+import MdLocalRestaurant from 'react-icons/lib/md/local-restaurant';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
-
 import '../../styles/css/style.css';
 
 class Infos extends Component {
@@ -23,16 +24,21 @@ class Infos extends Component {
                 <div className="content-bloc">
                     <Container fluid={true}>
                         <Row>
-                            <Col md="6">
-                                <MdAccessTime />
-                                <div className="title">Quand ?</div>
+                            <Col md="4">
+                                <MdAccessTime className="icon" />
+                                <div className="title-simple">Quand ?</div>
                                 Le samedi 8 Juin 2019<br />
                                 Céremonie : N/A<br />
                                 Réception : N/A<br />
                             </Col>
-                            <Col md="6">
-                                <MdLocationOn />
-                                <div className="title">Où ?</div>
+                            <Col md="4">
+                                <MdLocationOn className="icon" />
+                                <div className="title-simple">Où se trouve l'église ?</div>
+                                N/A
+                            </Col>
+                            <Col md="4">
+                                <MdLocalBar className="icon" /> <MdLocalRestaurant className="icon" />
+                                <div className="title-simple">Où se déroule la réception ?</div>
                                 N/A
                             </Col>
                         </Row>

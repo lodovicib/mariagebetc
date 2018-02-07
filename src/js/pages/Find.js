@@ -4,7 +4,13 @@ import '../../styles/css/style.css';
 class Find extends Component {
     render() {
         return (
-            <h1>test Find</h1>
+            <div className="App-contain">
+                <h1>Nous trouver</h1>
+                <div className="line"></div>
+                <div className="content-bloc">
+
+                </div>
+            </div>
         );
     }
 }
