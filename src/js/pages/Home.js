@@ -4,7 +4,9 @@ import '../../styles/css/style.css';
 class Home extends Component {
     render() {
         return (
-            <div className="Home">
+            <div className="test">
+                <div className="Home">
+                </div>
             </div>
         );
     }

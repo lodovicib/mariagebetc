@@ -3,9 +3,13 @@
   src: url("../fonts/Adlery_TRIAL.ttf") format("truetype");
 }
 
+/*html {
+  height: 100%;
+}*/
+
 body {
   width: 100%;
-  height: 100px;
+  /*height: 100%;*/
   background-color: white;
   font-family: "Gill Sans MT";
   font-size:16px;
@@ -17,7 +21,7 @@ body {
 /** Header **/
 /************/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
 
     #navigation {
         display: none !important;
@@ -57,13 +61,6 @@ body {
     display: none;
     z-index: 0;
 }
-
-/*.bm-burger-button button {
-    /*import MdMenu from 'react-icons/lib/md/menu';
-    width: 30px !important;
-    height: 30px !important;
-}*/
-
 
 .Header-menu {
     white-space: nowrap;
@@ -201,25 +198,74 @@ padding: 20px;
   margin-bottom: -15px;
 }
 
+/********************/
+/** Page : Follow **/
+/******************/
+
+.icon-title {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+.icon-sub-title {
+  font-size: 35px;
+  vertical-align: middle;
+}
+
+.content-bloc ul {
+  list-style: circle;
+}
+
+/*********************/
+/** Page : Thankyou **/
+/*********************/
+
+.Thankyou {
+  margin-top: 100px;
+  background: url("../images/background_5.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  /*display:inline-block;
+  vertical-align:middle;*/
+}
+
 /**********/
 /** Home **/
 /**********/
 
-.Home {
-  margin-top: 100px;
-  height: 1016px;
-  width: 1600px;
-  background: linear-gradient(to right, transparent 90%, white),
-  url("../images/background_1.jpg") no-repeat;
-  display:inline-block;
-  vertical-align:middle;
+/* TODO faire un @media avec un max la taille de la photo
+*/
+
+@media screen and (min-width: 1600px) {
+  .Home {
+    margin-top: 100px;
+    height: 1016px !important;
+    width: 1600px !important;
+    background: linear-gradient(to right, transparent 90%, white),
+    url("../images/background_1.jpg") no-repeat !important;
+  }
 }
+
+.test {
+  height: 1016px;
+}
+
+.test .Home {
+   margin-top: 100px;
+   height: 100%;
+   background: url("../images/background_1.jpg") no-repeat;
+   -webkit-background-size: contain;
+   background-size: contain;
+   /*display:inline-block;
+   vertical-align:middle;*/
+ }
 
 /************/
 /** Footer **/
 /************/
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 600px){
   .App-footer {
     display: none !important;
   }

@@ -8,6 +8,7 @@ import Follow from "./pages/Follow";
 import Home from "./pages/Home";
 import Find from "./pages/Find";
 import Infos from "./pages/Infos";
+import Thankyou from "./pages/Thankyou";
 
 class App extends Component {
 
@@ -25,6 +26,7 @@ class App extends Component {
                       <Route path="/infos" component={Infos}/>
                       <Route path="/find" component={Find}/>
                       <Route path="/form" component={Form}/>
+                      <Route path="/thankyou" component={Thankyou}/>
                   </div>
             <Footer />
           </div>
