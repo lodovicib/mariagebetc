@@ -21,7 +21,7 @@ body {
 /** Header **/
 /************/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 675px){
 
     #navigation {
         display: none !important;
@@ -221,13 +221,9 @@ padding: 20px;
 /** Page : Thankyou **/
 /*********************/
 
-.Thankyou {
-  margin-top: 100px;
-  background: url("../images/background_5.jpg") no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-  /*display:inline-block;
-  vertical-align:middle;*/
+.App-contain .Thankyou {
+    position:absolute;
+    z-index:1;
 }
 
 /**********/
@@ -265,7 +261,7 @@ padding: 20px;
 /** Footer **/
 /************/
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 675px){
   .App-footer {
     display: none !important;
   }
