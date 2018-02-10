@@ -3,13 +3,8 @@
   src: url("../fonts/Adlery_TRIAL.ttf") format("truetype");
 }
 
-/*html {
-  height: 100%;
-}*/
-
 body {
   width: 100%;
-  /*height: 100%;*/
   background-color: white;
   font-family: "Gill Sans MT";
   font-size:16px;
@@ -34,14 +29,6 @@ body {
 
     .Header {
         height: 50px !important;
-    }
-
-    .Home {
-        margin-top: 50px !important;
-    }
-
-    .App-contain h1 {
-      padding-top: 0 !important;
     }
 }
 
@@ -96,11 +83,17 @@ padding: 20px;
   color: #9fcff4 !important;
 }
 
-.App-content { }
-
 /***************/
 /** Container **/
 /***************/
+
+@media only screen and (max-width: 675px) {
+    .App-contain h1 {
+        padding-top: 0 !important;
+    }
+}
+
+.App-content { }
 
 .App-contain {
   margin: 100px 10% 0 5%;
@@ -127,31 +120,62 @@ padding: 20px;
   margin-left: 15%;
 }
 
+/* <Container></Container> */
+.mui-container-fluid {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/******************/
+/** Content bloc **/
+/******************/
+
+.App-contain .content-bloc {
+    margin-left: 16%;
+    margin-bottom: 20px;
+    display: grid;
+}
+
+.content-bloc .title-simple {
+    font-weight: bold;
+    font-size: 22px;
+    margin: 20px 0 15px 0;
+}
+
+.content-bloc .title-adlery {
+    font-family: "adlery",arial,sans-serif;
+    background-color: #cee6fe;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0 0 0 0;
+    padding: 5px 5px 5px 15px;
+}
+
+.content-bloc ul {
+    list-style: circle;
+}
+
+/********************/
+/** background img **/
+/********************/
+
+@media only screen and (max-width: 675px) {
+    .img-background {
+        height: 100% !important;
+    }
+}
+
+.img-background {
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
 
 /*******************/
 /** Page : Follow **/
 /*******************/
-
-.App-contain .content-bloc {
-  margin-left: 15%;
-  margin-bottom: 20px;
-  display: grid;
-}
-
-.content-bloc .title-simple {
-  font-weight: bold;
-  font-size: 22px;
-  margin: 20px 0 15px 0;
-}
-
-.content-bloc .title-blog {
-  font-family: "adlery",arial,sans-serif;
-  background-color: #cee6fe;
-  font-weight: bold;
-  font-size: 30px;
-  margin: 0 0 0 0;
-  padding: 5px 5px 5px 15px;
-}
 
 .content-bloc .bloc {
   text-align: justify;
@@ -186,21 +210,15 @@ padding: 20px;
   border: 3px solid #222222;
 }
 
-.mui-container-fluid {
-  width: 100%;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
 .icon {
   font-size: 45px;
   color: #494848;
   margin-bottom: -15px;
 }
 
-/********************/
-/** Page : Follow **/
-/******************/
+/*****************/
+/** Page : Find **/
+/*****************/
 
 .icon-title {
   width: 50px;
@@ -211,10 +229,6 @@ padding: 20px;
 .icon-sub-title {
   font-size: 35px;
   vertical-align: middle;
-}
-
-.content-bloc ul {
-  list-style: circle;
 }
 
 /*********************/
@@ -229,10 +243,6 @@ padding: 20px;
     .Thankyou {
         margin-top: 30px;
     }
-
-    .img-background {
-        height: 100% !important;
-    }
 }
 
 .Thankyou h1 {
@@ -245,13 +255,6 @@ padding: 20px;
     z-index:1;
 }
 
-.img-background {
-    height: 85%;
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-}
-
 .img-coeur {
     display: block;
     margin: 0 auto;
@@ -261,32 +264,34 @@ padding: 20px;
 /** Home **/
 /**********/
 
-/* TODO faire un @media avec un max la taille de la photo
-*/
+@media only screen and (max-width: 675px) {
+    .Home {
+        margin-top: 50px !important;
+    }
+}
 
-@media screen and (min-width: 1600px) {
-  .Home {
+@media only screen and (max-width: 510px) {
+
+    #mobile {
+        display: block !important;
+    }
+
+    #desktop {
+        display: none !important;
+    }
+}
+
+.Home {
     margin-top: 100px;
-    height: 1016px !important;
-    width: 1600px !important;
-    background: linear-gradient(to right, transparent 90%, white),
-    url("../images/background_1.jpg") no-repeat !important;
-  }
 }
 
-.test {
-  height: 1016px;
+#mobile {
+    display: none;
 }
 
-.test .Home {
-   margin-top: 100px;
-   height: 100%;
-   background: url("../images/background_1.jpg") no-repeat;
-   -webkit-background-size: contain;
-   background-size: contain;
-   /*display:inline-block;
-   vertical-align:middle;*/
- }
+#desktop {
+    display: block;
+}
 
 /************/
 /** Footer **/

@@ -4,7 +4,7 @@ import Row from 'muicss/lib/react/row';
 import Col from 'muicss/lib/react/col';
 import '../../styles/css/style.css';
 import background from '../../styles/images/background_5.jpg';
-import coeur from '../../styles/images/keur.png';
+import heart from '../../styles/images/keur.png';
 
 class Thankyou extends Component {
     render() {
@@ -18,7 +18,7 @@ class Thankyou extends Component {
                             <Container>
                                 <Row>
                                     <Col md="12">
-                                        <img src={coeur} className="img-coeur" />
+                                        <img src={heart} className="img-coeur" />
                                         Merci tousa toussa
                                     </Col>
                                 </Row>

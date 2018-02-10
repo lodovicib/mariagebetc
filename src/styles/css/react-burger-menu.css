@@ -54,6 +54,7 @@
 .bm-item-list {
     color: #b8b7ad;
     padding: 0 0.8em 10px 0.8em;
+    height: 90% !important;
 }
 
 .bm-item-list a {

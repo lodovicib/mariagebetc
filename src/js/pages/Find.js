@@ -14,7 +14,7 @@ class Find extends Component {
                 <h1>Nous trouver</h1>
                 <div className="line"></div>
                 <div className="content-bloc">
-                    <div className="title-blog">
+                    <div className="title-adlery">
                         <img className="icon-title" src={corse} /> Venir en Corse
                     </div>
                     <div className="title-simple"><MdFlight className="icon-sub-title" /> En avion</div>
@@ -26,7 +26,7 @@ class Find extends Component {
                     A destination de : Bastia ou Ile Rousse
                 </div>
                 <div className="content-bloc">
-                    <div className="title-blog">
+                    <div className="title-adlery">
                         <MdDirectionsRun className="icon-title" /> Se déplacer
                     </div>
                     <div className="title-simple"><MdDirectionsCar className="icon-sub-title" /> En voiture</div>
@@ -39,7 +39,7 @@ class Find extends Component {
                     </ul>
                 </div>
                 <div className="content-bloc">
-                    <div className="title-blog">
+                    <div className="title-adlery">
                         <MdLocalHotel className="icon-title" /> Hébergements
                     </div>
                     <div className="title-simple">Hôtels</div>
