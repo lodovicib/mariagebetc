@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { slide as Menu } from 'react-burger-menu'
+import packageJson from '../../../package.json';
 import MdHome from 'react-icons/lib/md/home';
 import MdDirectionsRun from 'react-icons/lib/md/directions-run';
 import MdInfoOutline from 'react-icons/lib/md/info-outline';
@@ -49,7 +50,7 @@ const Header = () => (
                 <MdFavoriteOutline /> <span>Remerciements</span>
             </Link>
             <hr />
-            <span>Version 0.1</span>
+            <span>Version {packageJson.version}</span>
         </Menu>
     </header>
 );

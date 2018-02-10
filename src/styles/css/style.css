@@ -21,7 +21,7 @@ body {
 /** Header **/
 /************/
 
-@media screen and (max-width: 675px){
+@media only screen and (max-width: 675px){
 
     #navigation {
         display: none !important;
@@ -221,9 +221,40 @@ padding: 20px;
 /** Page : Thankyou **/
 /*********************/
 
+@media only screen and (max-width: 675px) {
+    #thank-contain {
+        margin-top:50px;
+    }
+
+    .Thankyou {
+        margin-top: 30px;
+    }
+
+    .img-background {
+        height: 100% !important;
+    }
+}
+
+.Thankyou h1 {
+    color: #222222;
+}
+
 .App-contain .Thankyou {
+    width: 80%;
     position:absolute;
     z-index:1;
+}
+
+.img-background {
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.img-coeur {
+    display: block;
+    margin: 0 auto;
 }
 
 /**********/
