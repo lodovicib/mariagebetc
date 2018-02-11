@@ -27,7 +27,7 @@ const Header = () => (
                 <li><Link className={window.location.pathname === '/follow' ? 'active' : '' } to="/follow">Suivez-nous</Link></li>
                 <li><Link className={window.location.pathname === '/infos' ? 'active' : '' } to="/infos">Infos</Link></li>
                 <li><Link className={window.location.pathname === '/find' ? 'active' : '' } to="/find">Nous trouver</Link></li>
-                <li><Link className={window.location.pathname === '/form' ? 'active' : '' } to="/form">RSVP</Link></li>
+                <li><Link className={window.location.pathname === '/rsvp' ? 'active' : '' } to="/form">RSVP</Link></li>
             </ul>
         </nav>
         <Menu onStateChange={ isMenuOpen }>
