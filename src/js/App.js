@@ -25,7 +25,7 @@ class App extends Component {
                       <Route path="/follow" component={Follow}/>
                       <Route path="/infos" component={Infos}/>
                       <Route path="/find" component={Find}/>
-                      <Route path="/form" component={Form}/>
+                      <Route path="/rsvp" component={Form}/>
                       <Route path="/thankyou" component={Thankyou}/>
                   </div>
             <Footer />

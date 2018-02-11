@@ -20,45 +20,46 @@ class Infos extends Component {
         return (
             <div className="App-contain">
                 <h1>Informations</h1>
-                <div className="line"></div>
-                <div className="content-bloc">
-                    <Container fluid={true}>
-                        <Row>
-                            <Col md="4">
-                                <MdAccessTime className="icon" />
-                                <div className="title-simple">Quand ?</div>
-                                Le samedi 8 Juin 2019<br />
-                                Céremonie : N/A<br />
-                                Réception : N/A<br />
-                            </Col>
-                            <Col md="4">
-                                <MdLocationOn className="icon" />
-                                <div className="title-simple">Où se trouve l'église ?</div>
-                                N/A
-                            </Col>
-                            <Col md="4">
-                                <MdLocalBar className="icon" /> <MdLocalRestaurant className="icon" />
-                                <div className="title-simple">Où se déroule la réception ?</div>
-                                N/A
-                            </Col>
-                        </Row>
-                    </Container>
+                <div className="content-bloc-line">
+                    <div className="content-bloc">
+                        <Container fluid={true}>
+                            <Row>
+                                <Col md="4">
+                                    <MdAccessTime className="icon" />
+                                    <div className="title-simple">Quand ?</div>
+                                    Le samedi 8 Juin 2019<br />
+                                    Céremonie : N/A<br />
+                                    Réception : N/A<br />
+                                </Col>
+                                <Col md="4">
+                                    <MdLocationOn className="icon" />
+                                    <div className="title-simple">Où se trouve l'église ?</div>
+                                    N/A
+                                </Col>
+                                <Col md="4">
+                                    <MdLocalBar className="icon" /> <MdLocalRestaurant className="icon" />
+                                    <div className="title-simple">Où se déroule la réception ?</div>
+                                    N/A
+                                </Col>
+                            </Row>
+                        </Container>
 
-                    <Map center={this.props.center} zoom={this.props.zoom} className="leaflet-map">
-                        <TileLayer
-                            attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
-                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                        />
-                        { /*
-                        <Marker position={position}>
-                            <Popup>
-                                <span>
-                                  A pretty CSS3 popup. <br /> Easily customizable.
-                                </span>
-                            </Popup>
-                        </Marker>
-                        */}
-                    </Map>
+                        <Map center={this.props.center} zoom={this.props.zoom} className="leaflet-map">
+                            <TileLayer
+                                attribution="&amp;copy <a href=&quot;http://osm.org/copyright&quot;>OpenStreetMap</a> contributors"
+                                url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                            />
+                            { /*
+                            <Marker position={position}>
+                                <Popup>
+                                    <span>
+                                      A pretty CSS3 popup. <br /> Easily customizable.
+                                    </span>
+                                </Popup>
+                            </Marker>
+                            */}
+                        </Map>
+                    </div>
                 </div>
             </div>
         );

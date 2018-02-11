@@ -43,7 +43,7 @@ const Header = () => (
             <Link className={path() === '/find' ? 'active' : '' } to="/find">
                 <MdDirectionsCar /> <span>Nous trouver</span>
             </Link>
-            <Link className={path() === '/form' ? 'active' : '' } to="/form">
+            <Link className={path() === '/rsvp' ? 'active' : '' } to="/rsvp">
                 <MdModeEdit /> <span>RSVP</span>
             </Link>
             <Link className={path() === '/thankyou' ? 'active' : '' } to="/thankyou">

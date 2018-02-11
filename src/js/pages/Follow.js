@@ -8,7 +8,7 @@ class Follow extends Component {
         return (
             <div className="App-contain">
                 <h1>Suivez-nous</h1>
-                <div className="line"></div>
+                <div className="content-bloc-line">
                 <div className="content-bloc">
                     <div className="title-adlery" style={{'marginTop': '20px'}}>C'est le début de l'aventure</div>
                     <div className="bloc">
@@ -29,6 +29,7 @@ class Follow extends Component {
 
                     </div>
                     <div className="date">03/02/2018 18:12</div>
+                </div>
                 </div>
             </div>
         );
