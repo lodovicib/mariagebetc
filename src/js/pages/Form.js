@@ -56,11 +56,11 @@ class Form extends React.Component {
                 <div className="content-bloc-line">
                     <div className="content-bloc">
                         <Container fluid={true}>
-                            <Row>
+                            <Row className="Rsvp-row">
                                 <Col md="8">
                                     <img src={background} className="img-background-form" alt={"disney"} />
                                 </Col>
-                                <Col md="4">
+                                <Col md="4" className="col-buttons">
                                     <div className="content-button">
                                         <Button color="primary" onClick={() => { this.showContent("address") }}>
                                             Renseigner mon adresse
@@ -81,7 +81,7 @@ class Form extends React.Component {
                             <ToastContainer/>
                             <div className="bloc">
                                 <br/>
-                                Veuillez remplir le formulaire ci-dessous pour recevoir votre fair-part:
+                                Veuillez remplir le formulaire ci-dessous pour recevoir votre faire-part:
                                 <form onSubmit={this.onSubmit} id="rsvp-form">
                                     <Input type="text" name="lastName" label="Nom*" floatingLabel={true}
                                            onChange={this.handleInputChange} value={this.state.lastName} required/>

@@ -3,10 +3,20 @@
   src: url("../fonts/Adlery_TRIAL.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "Gill";
+    src: url("../fonts/copyfonts.com_gill-sans-light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Gill Sans STD";
+    src: url("../fonts/GillSansStd.otf") format("truetype");
+}
+
 body {
   width: 100%;
   background-color: white;
-  font-family: "Gill Sans MT";
+  font-family: "Gill Sans STD";
   font-size:16px;
 }
 
@@ -55,7 +65,7 @@ body {
     overflow: visible;
     position: relative;
     font-size: 25px;
-    font-family: "Gill Sans MT";
+    font-family: "Gill Sans STD";
     margin-top: 20px;
 }
 
@@ -108,14 +118,6 @@ padding: 20px;
   margin: 0 0 30px 20px;
 }
 
-/*.line {
-    width: 14px;
-    height:100%;
-    position:absolute;
-    margin-left: 10%;
-    background: url("../images/ligne-noire.png") repeat-y;
-}*/
-
 .App-contain hr {
   margin-left: 15%;
 }
@@ -149,7 +151,7 @@ padding: 20px;
     font-weight: bold;
     font-size: 30px;
     margin: 0 0 0 0;
-    padding: 5px 5px 5px 15px;
+    padding: 4px 5px 4px 15px;
 }
 
 .content-bloc-line {
@@ -172,20 +174,26 @@ padding: 20px;
 
 @media only screen and (max-width: 675px) {
     .img-background {
-        height: calc(100% - 50px) !important;
+       /* height: calc(100% - 50px) !important;*/
+        height: 100% !important;
     }
 }
 
 .img-background {
-    height: calc(100% - 146px);
+   /* height: calc(100% - 146px);*/
+    height: 100%;
     width: 100%;
-    position: absolute;
-    z-index: 1;
+/*position: absolute;
+z-index: 1;*/
 }
 
 /*****************/
 /** Page : RSVP **/
 /*****************/
+
+.Rsvp-row {
+    /*display: flex;*/
+}
 
 .img-background-form {
     display: block;
@@ -193,6 +201,10 @@ padding: 20px;
     width: 100%;
     max-width: 700px;
     border: 2px solid #222222;
+}
+
+.col-buttons {
+    margin: auto 0;
 }
 
 .content-button {
@@ -269,10 +281,37 @@ padding: 20px;
     .Thankyou {
         margin-top: 30px;
     }
+
+    .img-background-thank {
+        /*height: calc(100% - 46px);*/
+    }
+}
+
+.img-background-thank {
+   /* height: calc(100% - 146px);*/
+    width: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .Thankyou h1 {
     color: #222222;
+}
+
+.Thankyou h2 {
+    text-align: center;
+}
+
+.Thankyou a, .Thankyou a:visited {
+    color: #90c3ea;
+}
+
+.content-thank {
+    text-align: justify;
+    margin: 30px 0 30px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .App-contain .Thankyou {
@@ -290,27 +329,25 @@ padding: 20px;
 /** Home **/
 /**********/
 
-@media only screen and (min-width: 1600px) {
-    #desktop {
-        display: none !important;
-    }
-
-    .Home {
-        margin-top: 100px;
-        height: 1016px !important;
-        width: 1600px !important;
-        background: linear-gradient(to right, transparent 90%, white),
-        url("../images/background_1.jpg") no-repeat !important;
+@media only screen and (max-width: 1300px) {
+    .App-content-home {
+        display: table-cell;
+        vertical-align:middle;
     }
 }
 
 @media only screen and (max-width: 675px) {
     .Home {
-        margin-top: 50px !important;
+      margin-top: 50px !important;
     }
 }
 
 @media only screen and (max-width: 510px) {
+
+    .Home {
+        margin: 50px auto 0 auto !important;
+       /* margin-top: 50px !important;*/
+    }
 
     #mobile {
         display: block !important;
@@ -319,18 +356,40 @@ padding: 20px;
     #desktop {
         display: none !important;
     }
+
+    .App-content-home {
+        display: flex;
+    }
+
+    .img-background {
+        width: unset;
+    }
+}
+
+.App-content-home {
+    height: 100vh;
+    width: 100%;
+    background: #cee6fe url("../images/background.jpg") repeat-y fixed;
 }
 
 .Home {
     margin-top: 100px;
+    background: #cee6fe url("../images/background.jpg") repeat-y fixed;
 }
 
 #mobile {
     display: none;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 510px;
+    max-height: 981px;
 }
 
 #desktop {
     display: block;
+    margin: 0 auto;
+    max-width: 1500px;
+    max-height: 916px;
 }
 
 /************/
@@ -353,7 +412,7 @@ padding: 20px;
   display: grid;
   left: 0;
   bottom: 0;
-  z-index: 9999;
+  z-index: 9000;
 }
 
 .App-footer-copyright {

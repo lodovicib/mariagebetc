@@ -6,9 +6,11 @@ import '../../styles/css/style.css';
 class Home extends Component {
     render() {
         return (
-            <div className="Home">
-                <img id={"desktop"} src={background} className="img-background" />
-                <img id={"mobile"} src={mobile} className="img-background" />
+            <div className="App-content-home">
+                    <div className="Home">
+                        <img id={"desktop"} src={background} className="img-background" />
+                        <img id={"mobile"} src={mobile} className="img-background" />
+                    </div>
             </div>
         );
     }
