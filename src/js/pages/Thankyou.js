@@ -9,13 +9,10 @@ import heart from '../../styles/images/keur.png';
 class Thankyou extends Component {
     render() {
         return (
-<div><img src={background} className="img-background-thank" />
-
-
-    <div className="App-contain" id={"thank-contain"}>
+            <div className="App-contain" id={"thank-contain"}>
                      <div className="Thankyou">
                         <h1>Remerciements</h1>
-                        <div className="content-bloc">
+
                             <Container>
                                 <Row>
                                     <Col md="12" className="content-thank">
@@ -31,10 +28,9 @@ class Thankyou extends Component {
                                     </Col>
                                 </Row>
                             </Container>
-                        </div>
-                    </div>
-                </div></div>
 
+                    </div>
+                </div>
         );
     }
 }

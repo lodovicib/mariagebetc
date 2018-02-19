@@ -111,11 +111,11 @@ padding: 20px;
 }
 
 .App-contain h1 {
-  font-family: "adlery",arial,sans-serif;
-  font-size: 60px;
-  color: #90c3ea; /* #cee6fe */
-  padding-top: 30px;
-  margin: 0 0 30px 20px;
+    font-family: "adlery",arial,sans-serif;
+    font-size: 60px;
+    color: #90c3ea; /* #cee6fe */
+    padding-top: 30px;
+    margin: 0 0 30px 20px;
 }
 
 .App-contain hr {
@@ -152,6 +152,7 @@ padding: 20px;
     font-size: 30px;
     margin: 0 0 0 0;
     padding: 4px 5px 4px 15px;
+    text-align: left;
 }
 
 .content-bloc-line {
@@ -191,8 +192,14 @@ z-index: 1;*/
 /** Page : RSVP **/
 /*****************/
 
+@media only screen and (max-width: 800px) {
+    .Rsvp-row {
+        display: block !important;
+    }
+}
+
 .Rsvp-row {
-    /*display: flex;*/
+    display: flex;
 }
 
 .img-background-form {
@@ -273,9 +280,27 @@ z-index: 1;*/
 /** Page : Thankyou **/
 /*********************/
 
+@media only screen and (max-width: 400px) {
+    #thank-contain {
+       padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .Thankyou {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+
+    .Thankyou h1 {
+        margin-left: 0 !important;
+    }
+}
+
 @media only screen and (max-width: 675px) {
     #thank-contain {
         margin-top:50px;
+        padding-top: 10px;
+        height: 100vh !important;
     }
 
     .Thankyou {
@@ -306,6 +331,16 @@ z-index: 1;*/
     color: #90c3ea;
 }
 
+#thank-contain {
+    height: calc(100vh - 100px);
+    margin-left: 0;
+    padding-left: 5%;
+    margin-right: 0;
+    padding-right: 10%;
+    padding-bottom: 0;
+    background: #cee6fe url("../images/background.jpg") repeat-y fixed;
+}
+
 .content-thank {
     text-align: justify;
     margin: 30px 0 30px 0;
@@ -315,9 +350,7 @@ z-index: 1;*/
 }
 
 .App-contain .Thankyou {
-    width: 80%;
-    position:absolute;
-    z-index:1;
+    background: #cee6fe url("../images/background.jpg") repeat-y fixed;
 }
 
 .img-coeur {
