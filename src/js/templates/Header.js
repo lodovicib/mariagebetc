@@ -34,7 +34,7 @@ const Header = () => (
         </nav>
         <Menu isOpen={state.menuOpen}
               onStateChange={(state) => handleStateChange(state)}>
-            <Link className={path() === '/' ? 'active' : '' } to="/">
+            <Link className={path() === '/' ? 'active' : '' } to="/"> {/* onClick={() => { window.location.reload(); }}>  */}
                 <MdHome /> <span>Accueil</span>
             </Link>
             <Link className={path() === '/follow' ? 'active' : '' } to="/follow">

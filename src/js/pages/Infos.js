@@ -7,6 +7,7 @@ import MdLocationOn from 'react-icons/lib/md/location-on';
 import MdLocalBar from 'react-icons/lib/md/local-bar';
 import MdLocalRestaurant from 'react-icons/lib/md/local-restaurant';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
+import FaGift from 'react-icons/lib/fa/gift';
 import '../../styles/css/style.css';
 
 class Infos extends Component {
@@ -27,19 +28,24 @@ class Infos extends Component {
                                 <Col md="4">
                                     <MdAccessTime className="icon" />
                                     <div className="title-simple">Quand ?</div>
-                                    Le samedi 8 Juin 2019<br />
-                                    Céremonie : N/A<br />
+                                    Le samedi 08 Juin 2019<br />
+                                    Céremonie : 18h<br />
                                     Réception : N/A<br />
                                 </Col>
                                 <Col md="4">
                                     <MdLocationOn className="icon" />
                                     <div className="title-simple">Où se trouve l'église ?</div>
-                                    N/A
+                                    Eglise Saint Jean Baptiste<br />
+                                    Place du marché<br />
+                                    4 Rue Cardinal Viale Prelà<br />
+                                    20200 Bastia
                                 </Col>
                                 <Col md="4">
                                     <MdLocalBar className="icon" /> <MdLocalRestaurant className="icon" />
                                     <div className="title-simple">Où se déroule la réception ?</div>
-                                    N/A
+                                    La Lagune<br />
+                                    Lotissement California<br />
+                                    20290 Lucciana
                                 </Col>
                             </Row>
                         </Container>
@@ -59,6 +65,12 @@ class Infos extends Component {
                             </Marker>
                             */}
                         </Map>
+                    </div>
+                    <div className="content-bloc">
+                        <div className="title-adlery">
+                            <FaGift className="icon-title" /> Liste de mariage
+                        </div>
+                        A venir
                     </div>
                 </div>
             </div>

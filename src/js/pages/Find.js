@@ -30,11 +30,11 @@ class Find extends Component {
                             <MdDirectionsRun className="icon-title" /> Se déplacer
                         </div>
                         <div className="title-simple"><MdDirectionsCar className="icon-sub-title" /> En voiture</div>
-                        Il est INDISPENSABLE d'avoir une voiture pour accéder aux différents lieux du mariage <br />
+                        Il est (très très) vivement conseillé d'avoir une voiture (ou moto) pour accéder aux différents lieux du mariage <br />
                         Vous pouvez :
                         <ul>
                             <li>Louer une voiture à l'aéroport</li>
-                            <li>Venir avec sa voiture en bateau</li>
+                            <li>Venir avec sa voiture ou sa moto en bateau</li>
                             <li>Faire du covoiturage entre les invités</li>
                         </ul>
                     </div>

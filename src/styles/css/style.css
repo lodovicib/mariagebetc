@@ -1,3 +1,12 @@
+.loader-wrapper {
+    text-align: center;
+    margin: 25px;
+}
+
+.loaded-contents {
+    margin: 25px;
+}
+
 @font-face {
   font-family: "adlery";
   src: url("../fonts/Adlery_TRIAL.ttf") format("truetype");
@@ -14,8 +23,11 @@
 }
 
 body {
-  width: 100%;
+  /*
+
   background-color: white;
+  */
+    width: 100%;
   font-family: "Gill Sans STD";
   font-size:16px;
 }
@@ -98,8 +110,43 @@ padding: 20px;
 /***************/
 
 @media only screen and (max-width: 675px) {
+
+    body {
+        font-size: 14px !important;
+    }
+
+    .mui-col-md-4 {
+        margin-bottom: 20px;
+    }
+
+    .App-contain .thankHeader {
+        margin-top: 0 !important;
+    }
+
     .App-contain h1 {
         padding-top: 0 !important;
+        font-size: 40px !important;
+        margin-top: -25px !important;
+    }
+
+    .content-bloc .title-adlery {
+        font-size: 25px !important;
+    }
+
+    .content-bloc .bloc {
+        margin: 10px 0 10px 0 !important;
+    }
+
+    .icon-title {
+        height: 45px !important;
+    }
+
+    .content-bloc .title-simple {
+        font-size: 20px !important;
+    }
+
+    .icon-sub-title {
+        font-size: 33px !important;
     }
 }
 
@@ -224,14 +271,14 @@ z-index: 1;*/
 
 .content-bloc .bloc {
   text-align: justify;
-  margin: 5px 0 10px 0;
+  margin: 15px 0 10px 0;
 }
 
 .content-bloc .bloc img {
   width:50%;
   height:50%;
-  max-width: 360px;
-  max-height: 270px;
+  max-width: 500px;
+  max-height: 500px;
   min-width: 260px;
   min-height: 170px;
   float: left;
@@ -373,6 +420,11 @@ z-index: 1;*/
     .Home {
       margin-top: 50px !important;
     }
+
+    .App-content-home {
+        height: 100vh !important;
+    }
+
 }
 
 @media only screen and (max-width: 510px) {
@@ -391,6 +443,7 @@ z-index: 1;*/
     }
 
     .App-content-home {
+        height: 100vh !important;
         display: flex;
     }
 
@@ -400,6 +453,7 @@ z-index: 1;*/
 }
 
 .App-content-home {
+   /* overflow: hidden;*/
     height: 100vh;
     width: 100%;
     background: #cee6fe url("../images/background.jpg") repeat-y fixed;

@@ -11,11 +11,11 @@ class Thankyou extends Component {
         return (
             <div className="App-contain" id={"thank-contain"}>
                      <div className="Thankyou">
-                        <h1>Remerciements</h1>
-
                             <Container>
                                 <Row>
                                     <Col md="12" className="content-thank">
+                                        <h1 className="thankHeader">Remerciements</h1>
+                                        <br />
                                         <h2>Nous remercions du fond du coeur :</h2>
                                         <b>Marion Pradet</b> la dessinatrice du site. C'est une graphiste qui a beaucoup de talents ! Je vous invite à regarder de plus près ce qu'elle fait sur <a href={"https://marionpradet.myportfolio.com/"} target={"_blank"}>son portfolio</a><br />
                                         <br />
